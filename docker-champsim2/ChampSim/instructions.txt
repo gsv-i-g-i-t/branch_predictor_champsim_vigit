@@ -1,0 +1,13 @@
+put the runtests.sh inside the champsim directory of your own environment 
+make sure to make it a executable by typing: chmod +x runtests.sh
+then the input format is as follows :
+
+./run_tests.sh name_of_the_predictor warmup simulations \ traces1 \ traces2 
+
+example:
+
+
+./run_tests.sh hashed_perceptron_pro 20000000 20000000 \
+/workspace/traces/ipc1_public/spec_perlbench_001.champsimtrace.xz \
+/workspace/traces/ipc1_public/client_001.champsimtrace.xz \
+/workspace/traces/ipc1_public/client_004.champsimtrace.xz
